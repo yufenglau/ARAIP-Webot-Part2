@@ -1,0 +1,79 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/animals/protos/Dog.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.003574205639869187 -0.9999834168210537 0.0045156546518246125 4.944870025698172
+  position -0.5422092146490529 0.05151735822750675 2.3391246602160356
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+SolidBox {
+  translation -0.25 0.26 0.05
+  name "red"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 1 0 0
+  }
+}
+SolidBox {
+  translation -0.2 -0.26 0.05
+  name "green"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 0 1 0
+  }
+}
+SolidBox {
+  translation 0.24 0.25 0.05
+  name "blue"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+    emissiveColor 0 0 1
+  }
+}
+E-puck {
+  translation 2.12642e-21 -0.42 -6.3962e-05
+  rotation 1 2.0323955261154444e-11 2.2193233386031384e-12 2.450031587742027e-09
+  controller "ARAIPCW3_LAUYUFENG"
+}
+Dog {
+  translation 0.38 -0.37 0
+  rotation 0 0 1 1.5708
+  scale 0.15
+}
